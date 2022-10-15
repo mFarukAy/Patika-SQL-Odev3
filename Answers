@@ -1,0 +1,11 @@
+ANSWER 1: select * from country
+where country like 'A%a';
+
+ANSWER 2: select * from country
+where country ~~ '_____%n';
+
+ANSWER 3: select title from film
+where title ~~* '%t%t%t%t%';
+
+ANSWER 4: select * from film
+where title ~~ 'C%' and length > 90 and rental_rate = 2.99;
